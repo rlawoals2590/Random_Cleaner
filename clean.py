@@ -1,5 +1,6 @@
 import random
 import time
+
 li = [1, 2, 3, 4, 5, 6, 7]
 k = int(input("오늘 오지 않은 학생의 수: "))
 if k == 0:
@@ -23,7 +24,7 @@ if k == 0:
             print("윤현우 청소 당첨!")
         elif random_num == 7:
             print("유승균 청소 당첨!")
-    time_duration = 3.5
+    time_duration = 10
     time.sleep(time_duration)
 elif k == 1:
     a = int(input("오늘 오지 않은 학생의 번호: "))
@@ -48,7 +49,7 @@ elif k == 1:
             print("윤현우 청소 당첨!")
         elif random_num == 7:
             print("유승균 청소 당첨!")
-    time_duration = 3.5
+    time_duration = 10
     time.sleep(time_duration)
 elif k == 2:
     b, c = map(int, input("오늘 오지 않은 학생의 번호: ").split())
@@ -74,7 +75,7 @@ elif k == 2:
             print("윤현우 청소 당첨!")
         elif random_num == 7:
             print("유승균 청소 당첨!")
-    time_duration = 3.5
+    time_duration = 10
     time.sleep(time_duration)
 elif k == 3:
     d, e, f = map(int, input("오늘 오지 않은 학생의 번호: ").split())
@@ -101,5 +102,5 @@ elif k == 3:
             print("윤현우 청소 당첨!")
         elif random_num == 7:
             print("유승균 청소 당첨!")
-    time_duration = 3.5
+    time_duration = 10
     time.sleep(time_duration)
