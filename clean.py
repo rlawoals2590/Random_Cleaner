@@ -1,106 +1,80 @@
 import random
 import time
 
-li = [1, 2, 3, 4, 5, 6, 7]
+li = ["정주희", "이빈", "김재민", "김정태", "김동윤", "윤현우", "유승균"]
 k = int(input("오늘 오지 않은 학생의 수: "))
+
+def random_test(random_list):
+    if random_list == "정주희":
+        result = "정주희 청소 당첨!"
+    elif random_list == "이빈":
+        result = "이빈 청소 당첨!"
+    elif random_list == "김재민":
+        result = "김재민 청소 당첨!"
+    elif random_list == "김정태":
+        result = "김정태 청소 당첨!"
+    elif random_list == "김동윤":
+        result = "김동윤 청소 당첨!"
+    elif random_list == "윤현우":
+        result = "윤현우 청소 당첨!"
+    elif random_list == "유승균":
+        result = "유승균 청소 당첨!"
+    return result
+
 if k == 0:
+    test = random_test(random.choice(li))
     alist = []
     for i in range(3):
-        random_num = random.choice(li)
-        while random_num in alist:
-            random_num = random.choice(li)
-        alist.append(random_num)
-        if random_num == 1:
-            print("정주희 청소 당첨!")
-        elif random_num == 2:
-            print("이빈 청소 당첨!")
-        elif random_num == 3:
-            print("김재민 청소 당첨!")
-        elif random_num == 4:
-            print("김정태 청소 당첨!")
-        elif random_num == 5:
-            print("김동윤 청소 당첨!")
-        elif random_num == 6:
-            print("윤현우 청소 당첨!")
-        elif random_num == 7:
-            print("유승균 청소 당첨!")
+        while test in alist:
+            test = random_test(random.choice(li))
+        alist.append(test)
+        print(test)
+        time_duration = 0.5
+        time.sleep(time_duration)
     time_duration = 10
     time.sleep(time_duration)
 elif k == 1:
-    a = int(input("오늘 오지 않은 학생의 번호: "))
-    li.remove(a)
+    a = str(input("오늘 오지 않은 학생의 이름: "))
+    li.remove(str(f"{a}"))
+    test = random_test(random.choice(li))
     alist = []
     for i in range(3):
-        random_num = random.choice(li)
-        while random_num in alist:
-            random_num = random.choice(li)
-        alist.append(random_num)
-        if random_num == 1:
-            print("정주희 청소 당첨!")
-        elif random_num == 2:
-            print("이빈 청소 당첨!")
-        elif random_num == 3:
-            print("김재민 청소 당첨!")
-        elif random_num == 4:
-            print("김정태 청소 당첨!")
-        elif random_num == 5:
-            print("김동윤 청소 당첨!")
-        elif random_num == 6:
-            print("윤현우 청소 당첨!")
-        elif random_num == 7:
-            print("유승균 청소 당첨!")
+        while test in alist:
+            test = random_test(random.choice(li))
+        alist.append(test)
+        print(test)
+        time_duration = 0.5
+        time.sleep(time_duration)
     time_duration = 10
     time.sleep(time_duration)
 elif k == 2:
-    b, c = map(int, input("오늘 오지 않은 학생의 번호: ").split())
-    li.remove(b)
-    li.remove(c)
+    b, c = input("오늘 오지 않은 학생의 이름: ").split()
+    li.remove(str(f'{b}'))
+    li.remove(str(f'{c}'))
+    test = random_test(random.choice(li))
     alist = []
     for i in range(3):
-        random_num = random.choice(li)
-        while random_num in alist:
-            random_num = random.choice(li)
-        alist.append(random_num)
-        if random_num == 1:
-            print("정주희 청소 당첨!")
-        elif random_num == 2:
-            print("이빈 청소 당첨!")
-        elif random_num == 3:
-            print("김재민 청소 당첨!")
-        elif random_num == 4:
-            print("김정태 청소 당첨!")
-        elif random_num == 5:
-            print("김동윤 청소 당첨!")
-        elif random_num == 6:
-            print("윤현우 청소 당첨!")
-        elif random_num == 7:
-            print("유승균 청소 당첨!")
+        while test in alist:
+            test = random_test(random.choice(li))
+        alist.append(test)
+        print(test)
+        time_duration = 0.5
+        time.sleep(time_duration)
     time_duration = 10
     time.sleep(time_duration)
 elif k == 3:
-    d, e, f = map(int, input("오늘 오지 않은 학생의 번호: ").split())
-    li.remove(d)
-    li.remove(e)
-    li.remove(f)
+    d, e, f = input("오늘 오지 않은 학생의 번호: ").split()
+    li.remove(str(f'{d}'))
+    li.remove(str(f'{e}'))
+    li.remove(str(f'{f}'))
+    test = random_test(random.choice(li))
     alist = []
     for i in range(3):
-        random_num = random.choice(li)
-        while random_num in alist:
-            random_num = random.choice(li)
-        alist.append(random_num)
-        if random_num == 1:
-            print("정주희 청소 당첨!")
-        elif random_num == 2:
-            print("이빈 청소 당첨!")
-        elif random_num == 3:
-            print("김재민 청소 당첨!")
-        elif random_num == 4:
-            print("김정태 청소 당첨!")
-        elif random_num == 5:
-            print("김동윤 청소 당첨!")
-        elif random_num == 6:
-            print("윤현우 청소 당첨!")
-        elif random_num == 7:
-            print("유승균 청소 당첨!")
+        while test in alist:
+            test = random_test(random.choice(li))
+        alist.append(test)
+        print(test)
+        time_duration = 0.5
+        time.sleep(time_duration)
     time_duration = 10
     time.sleep(time_duration)
